@@ -2,17 +2,20 @@
 <html lang="eng">
 
 <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vendors/css/normalize.css" type="text/css">
     <link rel="stylesheet" href="vendors/css/Grid.css" type="text/css">
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <title>Omnifood</title>
 </head>
 
 <body>
+    <script src="resources/js/omnifood.js"></script>
     <header>
-        <img src="resources/img/logo-white.png" alt="logo-white" class="logo">
-        <nav class="hero-nav">
+        <nav class="row hero-nav">
+            <img src="resources/img/logo-white.png" alt="logo-white" class="logo">
             <ul>
                 <a href="">FOOD DELIVERY</a>
                 <a href="">HOW IT WORKS</a>
@@ -20,7 +23,7 @@
                 <a href="">SIGN UP</a>
             </ul>
         </nav>
-        <div class="hero-txt-box">
+        <div class="row hero-txt-box">
             <h1>
                 GOODBYE JUNK FOOD.
                 <br> HELLO SUPER HEALTHY MEALS.
@@ -29,6 +32,115 @@
             <button class="btn" type="button">Show me more</button>
         </div>
     </header>
+    <section class="features">
+        <div class="row">
+            <h2>Get food fast — not fast food.</h2>
+            <p class="intro"> Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking.
+                So let us take care of that, we’re really good at it, we promise!</p>
+        </div>
+        <div class="row init">
+            <ul>
+                <div class="col span-1-of-4 tile">
+                    <i class="ion-ios-infinite-outline icon"></i>
+                    <h3>Up to 365 days/year</h3>
+                    <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You
+                        can also choose to order more flexibly if that's your style.</p>
+                </div>
+                <div class="col span-1-of-4 tile">
+                    <i class="ion-ios-stopwatch-outline icon"></i>
+                    <h3>Ready in 20 minutes</h3>
+                    <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home.
+                        We work with the best chefs in each town to ensure that you're 100% happy.</p>
+                </div>
+                <div class="col span-1-of-4 tile">
+                    <i class="ion-ios-nutrition-outline icon"></i>
+                    <h3>100% organic</h3>
+                    <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+                        Good for your health, the environment, and it also tastes better!</p>
+                </div>
+                <div class="col span-1-of-4 tile">
+                    <i class="ion-ios-cart-outline icon"></i>
+                    <h3>Order anything</h3>
+                    <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose
+                        from our menu containing over 100 delicious meals. It's up to you!</p>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="meals">
+        <ul class="meal-list clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img class="one" src="resources/img/1.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/2.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/3.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/4.jpg" alt="">
+                </figure>
+            </li>
+        </ul>
+        <ul class="meal-list clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/5.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/6.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/7.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="resources/img/8.jpg" alt="">
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section class="hw-it-wrk">
+        <div class="row">
+            <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+        </div>
+        <div class="row">
+            <div class="iphone clearfix">
+                <img src="resources/img/app-iPhone.png" alt="iPhone">
+            </div>
+            <div class="step-buy clearfix">
+                <ul>
+                    <li>
+                        <p class="steps">Choose the subscription plan that best fits your needs and sign up today.</p>
+                    </li>
+                    <li>
+                        <p class="steps">Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+                    </li>
+                    <li>
+                        <p class="steps">Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                    </li>
+                </ul>
+                <a href="">
+                    <img src="resources/img/download-app-android.png" alt="android-app-download">
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
