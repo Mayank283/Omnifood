@@ -10,6 +10,10 @@
     box-sizing: border-box
 }
 
+*:focus {
+    outline: none;
+}
+
 html {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -18,7 +22,7 @@ html {
 }
 
 .row {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -85,7 +89,8 @@ h3 {
     font-size: 20px;
     font-weight: 300;
     background-color: transparent;
-    transition: background-color 0.2s, border 0.2s, color 0.2s
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    cursor: pointer
 }
 
 .btn:hover {
@@ -176,7 +181,7 @@ header {
     margin-bottom: 10px;
 }
 
-.init {
+.feat-list {
     opacity: 0;
     /* animation-name: fade-in;
     animation-duration: 4s; */
@@ -241,7 +246,7 @@ header {
 
 .hw-it-wrk {
     padding: 90px 0px;
-    background-color: #f6f8f8;
+    background-color: #f4f4f4;
 }
 
 .iphone {
@@ -252,10 +257,23 @@ header {
     float: left
 }
 
-.iphone img {
+.iphone-img {
     width: 220px;
     height: 450px;
     float: right;
+    transform: translateY(500px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+
+.iphone-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.iphone-anim {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .step-buy {
@@ -281,4 +299,239 @@ header {
 .step-buy a img {
     height: 50px;
     width: 150px;
+}
+
+/*------------------------------------------*/
+
+/*Section 4 cities style*/
+
+/*------------------------------------------*/
+
+.cities {
+    padding: 90px 0px;
+}
+
+.city-list {
+    list-style: none;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.city-anim {
+    opacity: 1;
+}
+
+.city {
+    width: 100%;
+    padding: 10px;
+}
+
+.city img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.city a {
+    text-decoration: none;
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 2px;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.city a:hover {
+    color: #000000;
+    border-bottom: 1px solid transparent;
+}
+
+.city p {
+    line-height: 145%;
+}
+
+.icon-2 {
+    display: inline-block;
+    color: #e67e22;
+    text-align: center;
+    font-size: 120%;
+    width: 30px;
+    margin-right: 10px;
+}
+
+/*------------------------------------------*/
+
+/*Section 5 customers style*/
+
+/*------------------------------------------*/
+
+.customer {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), url(../img/back-customers.jpg));
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 80px;
+}
+
+.customer-list {
+    list-style: none;
+}
+
+.customer-list p {
+    line-height: 145%;
+    letter-spacing: 1px;
+    font-style: italic;
+    font-size: 95%;
+    margin-top: 40px;
+}
+
+.customer-list img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+/*------------------------------------------*/
+
+/*Section 6 sign-up style*/
+
+/*------------------------------------------*/
+
+.sign-up {
+    padding: 80px 0px;
+    background-color: #f4f4f4;
+}
+
+.plan {
+    background-color: #fff;
+    margin: 0px 20px;
+}
+
+.pricing {
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 20px;
+}
+
+.pricing p {
+    margin-bottom: 10px;
+    color: #e67e22;
+    font-size: 300%;
+}
+
+.pricing span {
+    font-size: 30%;
+}
+
+.pricing h5 {
+    font-weight: lighter;
+}
+
+.offer {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.offer ul {
+    list-style: none;
+    padding: 20px 20px;
+}
+
+.offer ul li {
+    padding: 5px 0px;
+}
+
+.sign-up-btn {
+    text-align: center;
+    padding: 15px;
+}
+
+.sign-up-btn button {
+    margin: 0px;
+}
+
+.icon-3 {
+    margin-right: 20px;
+    color: #e67e22;
+    font-size: 110%;
+}
+
+/*------------------------------------------*/
+
+/*Section 7 contact-form style*/
+
+/*------------------------------------------*/
+
+.form-details {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form-details input[type=text], input[type=email], textarea, select {
+    padding: 7px;
+    font-weight: 100;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+}
+
+.form-details button {
+    background-color: #e67e22;
+    color: #ffffff;
+}
+
+/*------------------------------------------*/
+
+/*Section 8 footer style*/
+
+/*------------------------------------------*/
+
+.footer {
+    padding: 60px;
+    background-color: #333;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #888;
+    font-size: 15px;
+    margin-left: 15px;
+    transition: color 0.2s
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.connect {
+    margin-bottom: 20px;
+}
+
+.connect .links {
+    float: left;
+}
+
+.connect .social {
+    float: right;
+}
+
+.connect i {
+    font-size: 180%;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 80%;
+    color: #888;
 }
