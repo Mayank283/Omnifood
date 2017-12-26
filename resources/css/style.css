@@ -125,6 +125,11 @@ header {
 .hero-nav ul {
     float: right;
     margin-top: 55px;
+    list-style: none;
+}
+
+.hero-nav li {
+    float: left;
 }
 
 .hero-nav ul a {
@@ -196,6 +201,10 @@ header {
         opacity: 1
     }
 } */
+
+.feat-list ul {
+    list-style: none;
+}
 
 .fade-in-anim {
     opacity: 1;
@@ -500,6 +509,10 @@ input[type=checkbox] {
 .footer {
     padding: 60px;
     background-color: #333;
+}
+
+.footer ul {
+    list-style: none;
 }
 
 .footer a {

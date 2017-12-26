@@ -1,3 +1,6 @@
+// effects using plain css
+// alternate to plain css is to use animate.css
+
 function fadeIn() {
     //feature-anim
     const feature = document.querySelector('.features');
@@ -28,5 +31,18 @@ function fadeIn() {
 }
 window.addEventListener('scroll', fadeIn);
 
-//var c = document.getElementsByTagName('section')
-// var c = document.getElementsByTagName('header')
+//Scroll using jQuery
+
+$(document).ready(() => {
+
+
+    //scroll on button click
+    $('#scroll-to-plans').click(() => {
+        $('html,body').animate({ scrollTop: $('.sign-up').offset().top }, 1500);
+    });
+
+    $('#scroll-to-feat').click(() => {
+        $('html,body').animate({ scrollTop: $('.features').offset().top }, 1000);
+    });
+
+})
